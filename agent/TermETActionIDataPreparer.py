@@ -131,4 +131,4 @@ with open(output_jsonl, "w", encoding="utf-8") as f:
     for item in results:
         f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-print(f"✅ 共提取 {len(results)} 条结构化段，写入文件：{output_jsonl}")
+print(f"✅ 共提取 {len(results)} 条结构化段落，写入文件：{output_jsonl}")
