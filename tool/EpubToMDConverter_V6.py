@@ -413,16 +413,16 @@ class EpubToMDConverter:
 # ============= 使用示例 =============
 def main():
     # 使用示例
-    converter = EpubToMDConverter("file/市场技术分析.epub")
+    converter = EpubToMDConverter("file/日本蜡烛图技术epub.epub")
     
     # 转换为多个文件
     #converter.convert(ConversionType.MULTIPLE_FILES, "file/技术分析")
     
     # 转换为单个文件
-    #converter.convert(ConversionType.SINGLE_FILE, "file/技术分析.md")
+    converter.convert(ConversionType.SINGLE_FILE, "file/技术分析.md")
     
     # 转换为带Base64图片的单个文件
-    converter.convert(ConversionType.SINGLE_FILE_WITH_BASE64, "file/biantaioutput_with_images.md")
+    #converter.convert(ConversionType.SINGLE_FILE_WITH_BASE64, "file/biantaioutput_with_images.md")
 
 if __name__ == "__main__":
     main()
